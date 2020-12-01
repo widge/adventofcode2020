@@ -1,0 +1,17 @@
+{
+  "name": "adventofcode2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/widge/adventofcode2020.git"
+  },
+  "author": "Sam Widger",
+  "license": "ISC",
+  "homepage": "https://github.com/widge/adventofcode2020#readme"
+}
