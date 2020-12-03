@@ -4,7 +4,6 @@ const list = input.data;
 const target = 2020;
 
 const challengeOne = () => {
-  console.log("# Challenge 1 #");
 
   // .some stops iterating when true is returned
   list.some((value1) => {
@@ -23,7 +22,6 @@ const challengeOne = () => {
 }
 
 const challengeHashmap = () => {
-  console.log("# Challenge 1 v2 #");
   const hash = {};
   list.some((value1, index) => {
 
@@ -41,7 +39,6 @@ const challengeHashmap = () => {
 }
 
 const challengeTwo = () => {
-  console.log("# Challenge 2 #");
 
   const hash = {};
   list.some((value1, index) => {
