@@ -2,7 +2,12 @@ import fs from 'fs';
 
 const convertInputFileToArray = (filepath) => {
 
-  return fs.readFileSync(filepath).toString().split("\n");
+  return convertInputFileToString(filepath).split("\n");
+}
+
+const convertInputFileToString = (filepath) => {
+
+  return fs.readFileSync(filepath).toString();
 }
 
 const challengeWrapper = (day, challengeFunctions) => {
@@ -17,4 +22,4 @@ const challengeWrapper = (day, challengeFunctions) => {
   });
 };
 
-export { convertInputFileToArray, challengeWrapper };
+export { convertInputFileToArray, convertInputFileToString, challengeWrapper };
