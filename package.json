@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "latest": "node index.js latest"
+    "latest": "node index.js latest",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -14,5 +16,19 @@
   },
   "author": "Sam Widger",
   "license": "ISC",
-  "homepage": "https://github.com/widge/adventofcode2020#readme"
+  "homepage": "https://github.com/widge/adventofcode2020#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^4.3.4",
+    "prettier": "^2.2.1"
+  }
 }

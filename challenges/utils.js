@@ -1,24 +1,17 @@
 import fs from 'fs';
 
-const convertInputFileToArray = (filepath) => {
-
-  return convertInputFileToString(filepath).split("\n");
-}
-
-const convertInputFileToString = (filepath) => {
-
-  return fs.readFileSync(filepath).toString();
-}
+const convertInputFileToString = (filepath) =>
+  fs.readFileSync(filepath).toString();
+const convertInputFileToArray = (filepath) =>
+  convertInputFileToString(filepath).split('\n');
 
 const challengeWrapper = (day, challengeFunctions) => {
-
-  console.log("", `\n###### Day ${day} ######`);
-  Object.entries(challengeFunctions).map(([label, challengeFunc]) => {
-
-  console.log("", `\n## Challenge ${label} ##`);
-  console.time("Executed in: ");
-  challengeFunc();
-  console.timeEnd("Executed in: ");
+  console.log('', `\n###### Day ${day} ######`);
+  Object.entries(challengeFunctions).forEach(([label, challengeFunc]) => {
+    console.log('', `\n## Challenge ${label} ##`);
+    console.time('Executed in: ');
+    challengeFunc();
+    console.timeEnd('Executed in: ');
   });
 };
 
