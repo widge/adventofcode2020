@@ -11,7 +11,7 @@ const challengeOne = () => {
     sum += groupUniques.length;
   });
 
-  console.log(`Sum of uniques is ${sum}`);
+  console.log(`Sum of group uniques is ${sum}`);
 };
 
 const challengeTwo = () => {

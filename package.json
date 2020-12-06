@@ -17,9 +17,14 @@
   "author": "Sam Widger",
   "license": "ISC",
   "homepage": "https://github.com/widge/adventofcode2020#readme",
+  "lint-staged": {
+    "challenges/**/*.js": [
+      "npm run lint:fix"
+    ]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix"
+      "pre-commit": "lint-staged"
     }
   },
   "devDependencies": {
@@ -29,6 +34,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.2.0",
     "husky": "^4.3.4",
+    "lint-staged": "^10.5.3",
     "prettier": "^2.2.1"
   }
 }
