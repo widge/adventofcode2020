@@ -1,7 +1,7 @@
 import {convertInputFileToString} from "../utils.js"
 import { allRequiredFieldsPresent, normaliseInput, validators } from "./utils.js";
 
-const input = convertInputFileToString('./challenges/day4/input.txt');
+const input = convertInputFileToString('./challenges/day5/input.txt');
 const normalisedData = normaliseInput(input);
 
 const challengeOne = () => {
