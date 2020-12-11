@@ -18,8 +18,10 @@
       "prettier/prettier": "error",
       "import/extensions": ["error","always"],
       "no-console": "off",
-      "no-param-reassign": ["error", { "props": false }],
       "no-plusplus": "off",
-      "radix": "off"
+      "radix": "off",
+      "no-param-reassign": "off",
+      "consistent-return": "off"
+
     }
 }
