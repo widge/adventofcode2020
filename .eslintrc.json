@@ -22,6 +22,5 @@
       "radix": "off",
       "no-param-reassign": "off",
       "consistent-return": "off"
-
     }
 }

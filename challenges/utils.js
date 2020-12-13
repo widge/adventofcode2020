@@ -4,6 +4,10 @@ const convertInputFileToString = (filepath) =>
   fs.readFileSync(filepath).toString();
 const convertInputFileToArray = (filepath) =>
   convertInputFileToString(filepath).split('\n');
+const convertInputFileToCharArrayByLine = (filepath) =>
+  convertInputFileToString(filepath)
+    .split('\n')
+    .map((line) => line.split(''));
 
 const challengeWrapper = (day, challengeFunctions) => {
   console.log('', `\n###### Day ${day} ######`);
@@ -15,4 +19,9 @@ const challengeWrapper = (day, challengeFunctions) => {
   });
 };
 
-export { convertInputFileToArray, convertInputFileToString, challengeWrapper };
+export {
+  convertInputFileToArray,
+  convertInputFileToString,
+  challengeWrapper,
+  convertInputFileToCharArrayByLine,
+};

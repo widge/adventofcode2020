@@ -9,6 +9,7 @@ import day7 from './challenges/day7/day7.js';
 import day8 from './challenges/day8/day8.js';
 import day9 from './challenges/day9/day9.js';
 import day10 from './challenges/day10/day10.js';
+import day11 from './challenges/day11/day11.js';
 
 const args = process.argv.slice(2);
 const filter = args && args.length > 0 ? args[0] : '';
@@ -27,10 +28,11 @@ if (!filter) {
   challengeWrapper(7, { 1: day7.challengeOne, 2: day7.challengeTwo });
   challengeWrapper(8, { 1: day8.challengeOne, 2: day8.challengeTwo });
   challengeWrapper(9, { 1: day9.challengeOne, 2: day9.challengeTwo });
+  challengeWrapper(10, { 1: day10.challengeOne, 2: day10.challengeTwo });
 }
 
 if (!filter || filter === 'latest') {
-  challengeWrapper(10, { 1: day10.challengeOne, 2: day10.challengeTwo });
+  challengeWrapper(11, { 1: day11.challengeOne, 2: day11.challengeTwo });
 } else {
   console.log(`Argument '${filter}' not recognised. Only 'latest' is accepted`);
 }
