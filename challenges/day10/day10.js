@@ -8,7 +8,6 @@ adapters.push((+adapters[adapters.length - 1] + 3).toString()); // include in-bu
 const challengeOne = () => {
   let oneJoltDifferences = 0;
   let threeJoltDifferences = 0;
-
   adapters.forEach((adapter, index) => {
     if (index > 0) {
       const difference = parseInt(adapter) - parseInt(adapters[index - 1]);
